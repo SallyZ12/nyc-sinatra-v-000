@@ -1,8 +1,14 @@
 <h3> The Figure You Selected Is: <%= @figure.name %> </h3>
 
-<h2> Landmarks: <%=@figure.landmarks %> </h2>
+<h3> Landmarks: </h3>
+<% @figure.landmarks.each do |landmarks| %>
+  <li> <a href= "/landmarks/<%=landmarks%>"> <%= landmarks.name %> <%=landmarks.year_completed%> </a> </li>
+<%end%>
 
-<h2> Titles: <%=@figure.titles %> </h2>
+<h3> Titles: </h3>
+<% @figure.titles.each do |title| %>
+  <li>  <%=title.name%>  </li>
+  <%end%>
 
 </br>
 
