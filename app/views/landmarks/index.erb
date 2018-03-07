@@ -1,12 +1,11 @@
 <h2> Landmark List </h2>
 
 <%@landmarks.order("name").each do |landmark|%>
-<li> <a href= "/landmarks/<%=landmark%>"> <%= landmark.name %><%=landmark.year_completed%></a> </li>
+<li> <a href= "/landmarks/<%=landmark.id%>"> <%= landmark.name %><%=landmark.year_completed%></a> </li>
 <%end%>
 
 </br>
-
-Select to Go Back to Master Page: <a href= "/" > Master Page  </a>
+Select to Go Back to Home Page: <a href= "/" > Home Page  </a>
 
 </br></br>
 

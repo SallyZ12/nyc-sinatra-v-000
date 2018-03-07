@@ -11,7 +11,6 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-
     @landmark = Landmark.create(params[:landmark])
     @landmark.save
 
@@ -31,10 +30,8 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks/:id' do
-
     @landmark = Landmark.find(params[:id])
     @landmark.update(params[:landmark])
-
     @landmark.save
 
     redirect "/landmarks/#{@landmark.id}"
