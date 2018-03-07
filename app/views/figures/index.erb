@@ -1,11 +1,11 @@
 <h2> Figure List </h2>
 
 <%@figures.order("name").each do |figure|%>
-<li> <a href= "/figures/<%=figure%>"> <%= figure.name %> </li>
+<li> <a href= "/figures/<%=figure.id%>"> <%= figure.name %> </li>
 <%end%>
 
 
 </br>
-Select to Go Back to Master Page: <a href= "/" > Master Page  </a></br></br>
+Select to Go Back to Home Page: <a href= "/" > Home Page  </a></br></br>
 
 Select to Create a New Figure: <a href= "/figures/new" > New Figure </a>

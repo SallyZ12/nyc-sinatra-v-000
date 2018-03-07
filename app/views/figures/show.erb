@@ -1,1 +1,10 @@
-<h3> show page</h3>
+<h3> The Figure You Selected Is: <%= @figure.name %> </h3>
+
+<h2> Landmarks: <%=@figure.landmarks %> </h2>
+
+<h2> Titles: <%=@figure.titles %> </h2>
+
+</br>
+
+
+<p> To Edit This Figure Select <a href= "/figures/<%=@figure.id%>/edit"> Edit Figure </a></p>
