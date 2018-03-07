@@ -2,7 +2,7 @@
 
 <h3> Landmarks: </h3>
 <% @figure.landmarks.each do |landmarks| %>
-  <li> <a href= "/landmarks/<%=landmarks%>"> <%= landmarks.name %> <%=landmarks.year_completed%> </a> </li>
+  <li> <%= landmarks.name %> <%=landmarks.year_completed%> </a> </li>
 <%end%>
 
 <h3> Titles: </h3>
@@ -13,3 +13,8 @@
 </br>
 
 <p> To Edit This Figure Select <a href= "/figures/<%=@figure.id%>/edit"> Edit Figure </a></p>
+
+
+<p> Select to Go Back to Figure List: <a href= "/figures" >Figure List  </a> </p>
+
+<p> Select to Go Back to Home Page: <a href= "/" > Home Page  </a> </p>
